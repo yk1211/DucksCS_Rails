@@ -1,0 +1,39 @@
+<% @page_title = "Inquiry" %>
+
+<div class="container">
+  <p><%= link_to "TOP", :root, style: "color: #880c29"%> > <%= link_to "Contact Us", :index, style: "color: #880c29" %> </p>
+  <h2>Confirm your inquiry</h2>
+  <%= form_for @inquiry, :url => inquiry_thanks_path do |form| %>
+  <table class="confirm_table">
+    <tr>
+      <th>Title</th>
+      <td>
+        <%= form.hidden_field :title %>
+        <%= @inquiry.title %>
+      </td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>
+        <%= form.hidden_field :name %>
+        <%= @inquiry.name %>
+      </td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>
+        <%= form.hidden_field :email %>
+        <%= @inquiry.email %>
+      </td>
+    </tr>
+    <tr>
+      <th>Message</th>
+      <td>
+        <%= form.hidden_field :message %>
+        <%= @inquiry.message %>
+      </td>
+    </tr>
+  </table>
+  <%= form.submit "Submit", :class => "btn btn-primary" %>
+</div>
+<% end %>

@@ -1,0 +1,10 @@
+<% @page_title = "Edit My Review" %>
+
+<div class="container">
+  <p><%= link_to "TOP", :root, style: "color: #880c29" %> > <%= link_to "My Reviews", :search, style: "color: #880c29" %> > Edit My Review</p>
+  <h3>Edit My Review</h3>
+</div>
+
+<%= form_for @post do |form| %>
+<%= render "shared/review_form", form: form %>
+<% end %>

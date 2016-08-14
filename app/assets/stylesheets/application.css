@@ -1,0 +1,87 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+ .navbar-default {
+background-color: transparent;
+border: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+color: #d10a38;
+background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+ font-size: 18px;
+ color: #000000;
+}
+
+.navbar-default .btn-default {
+
+ background-color: #333;
+ color: #fff;
+}
+
+.navbar-default .btn-default:hover {
+  background-color: #fff;
+  border-color: #880c29;
+  color: #880c29;
+}
+
+
+div#content {
+  margin-top: 60px;
+}
+
+html{
+  min-height: 100%;
+  position: relative;
+}
+
+ body{
+   background-color: #f5f5f5;
+   color: black;
+   font-family: Meiryo, sans-serif;
+   margin-bottom: 40px;
+ }
+
+ div#footer {
+   clear: both;
+   color: #f5f5f5;
+   height: 40px;
+   width: 100%;
+   padding: 15px 0;
+   text-align: center;
+   background-color: #880c29;
+
+   bottom: 0;
+   position: absolute;
+ }
+
+
+ a#hover {
+   color: #ccf;
+ }
+
+ @media screen and (max-width: 639px){
+   body {font-size: 13px;}
+   .box1 .school {font-size: 15px;}
+   .box1 .signup {font-size: 15px; width: 180px;}
+   .box1 h1{font-size: 25px;}
+   .box2 h2{font-size: 18px;}
+ }
+ @media screen and (min-width: 640px) and (max-width: 768p) {
+   body {font-size: 14px; }
+ }
+ @media screen and (min-width: 768px) {
+   body{font-size: 16px; }
+   .box2 h2{font-size: 30px;}
+ }
+.paginate {
+  text-align: center;
+  line-height: 50px;
+
+}

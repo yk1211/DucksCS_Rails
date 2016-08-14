@@ -1,0 +1,35 @@
+<% @page_title = "My Account" %>
+
+<div class="container">
+  <p><%= link_to "TOP", :root, style: "color: #880c29" %> > My Account </p>
+
+  <% if flash[:notice_edit_account] %>
+  <div class="alert alert-info">
+    <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+    <span><%= flash[:notice_edit_account] %></span>
+  </div>
+  <% end %>
+
+  <h3><%= @page_title%>&nbsp <small><%= link_to " Edit ", :edit_account, style: "color: #880c29;" %></small></h3>
+  <table class="table account_table">
+    <tr>
+      <th width="100">User Name</th>
+      <td><%= @member.name %></td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td><%= @member.email %></td>
+    </tr>
+    <tr>
+      <th>Password</th>
+      <td>****</td>
+    </tr>
+    <tr>
+      <th>Password_Confirmation</th>
+      <td>****</td>
+    </tr>
+  </table>
+  <div class="box_myaccount">
+    <br />
+  </div>
+</div>

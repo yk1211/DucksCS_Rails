@@ -1,0 +1,52 @@
+<% @page_title = "Home "%>
+
+<div class="box1">
+  <p class="school">Stevens Institute of Technology</p>
+  <h1><b>Review in Minutes </b></h1>
+  <p>
+    <button class="signup"><%= link_to_if !current_member, "Sign Up Now", :new_member %></button>
+  </p>
+  <p>
+    <span class="login"><%= link_to_if !current_member, "Log in", :login %></span>
+  </p>
+
+</div>
+
+<div class="box2">
+  <h2>Make course selection easy and fun.</h2>
+</div>
+
+<div class="box3">
+  <h3><b>Review in Minutes</b></h3>
+  <p>
+    Sharing your course experience with new coming students.</br>
+    Making your course selection easy and fun.
+  <br></br>
+  </p>
+  <h3><b>How Ducks CS Works</b></h3>
+</div>
+
+<div class="boxA">
+  <div class="box4">
+    <h3>1. <span class="glyphicon glyphicon-log-in"></span> Sign Up</h3>
+    <p>
+      Easy sign up with your stevens email account.</br>
+      Already a member? Just log in
+      <span class="login"><%= link_to "here!", :login %></span>
+    </p>
+  </div>
+
+  <div class="box5">
+    <h3>2. <span class="glyphicon glyphicon-pencil"></span> Review</h3>
+    <p>
+      Share your CS course experiecne just in minutes!
+    </p>
+  </div>
+
+  <div class="box6">
+    <h3>3. <span class="glyphicon glyphicon-thumbs-up"></span> Share</h3>
+    <p>
+      You can share your review with your friends.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+<% render "shared/errors", obj: @post %>
+<div class="container">
+  <table class="table new_review table-bordered ">
+    <tr>
+      <th><%= form.label :term %></th>
+      <td>
+        <% options = ["2016Summer", "2016Spring", "2015Fall", "2015Spring", "2014Fall", "2014Spring", "2013Fall", "2013Summer", "2013Fall", "2103Spring", "2012Fall", "2011Summer", "2011Spring", "2010Fall"] %>
+        <%= form.select :term, options %>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :campus %></th>
+      <td><%= form.radio_button :campus, 0%> On campus <%= form.radio_button :campus, 1%> Web campus</td>
+    </tr>
+    <tr>
+      <th><%= form.label :Title %></th>
+      <td>
+        <% title = [] %>
+        <% File.open(File.dirname(__FILE__) + '/title.txt') do |file| %>
+        <% file.each_line do |line| %>
+        <% title << line %>
+        <% end %>
+        <% end %>
+        <%= form.select :title, title %>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :Course_Level %></th>
+      <td>
+        <% options = ["Advanced", "Intermediate", "Introductory"] %>
+        <%= form.select :level, options %>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :Home_Work %></th>
+      <td>
+        <% options = ["Heavy", "Middle", "Light", "No home work"] %>
+        <%= form.select :hw, options %>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :Project %></th>
+      <td>
+        <% options = ["Project with presentation", "Project with no presentaion", "No project"] %>
+        <%= form.select :project, options %>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :Language %></th>
+      <td>
+        <% options = ["C", "C++", "C#", "Java", "Python", "Ruby", "PHP", "JavaScript", "Scala", "Haskell",
+          "Ocaml", "Lisp", "Scheme", "Assembly language", "GO", "Rust", "Shell", "VBA", "SQL", "Anything OK"] %>
+        <%= form.select :language, options %>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :Midterm_Exam %></th>
+      <td>
+        <% options = ["Open Book", "Closed book", "No midterm exam"] %>
+        <%= form.select :mid, options %>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :Final_Exam %></th>
+      <td>
+        <% options = ["Open Book", "Closed book", "No final exam"] %>
+        <%= form.select :final, options %>
+      </td>
+    </tr>
+
+    <tr>
+      <th><%= form.label :Review  %></th>
+      <td>
+        <%= form.text_area :body, cols: 40, rows: 5, placeholder: "Any prerequisites, required knowledge, your recommendations"%>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :Course_Satisfaction%></th>
+      <td>
+        <% options = [5, 4, 3, 2, 1]%>
+        <%= form.select :rate, options %>
+      </td>
+    </tr>
+
+  </table>
+  <p><%= form.submit "Submit", class: "btn btn-primary"  %></p>
+</div>

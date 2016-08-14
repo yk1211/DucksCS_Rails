@@ -1,0 +1,9 @@
+<% @page_title = "New review" %>
+
+<div class="container">
+  <h3>New Review</h3>
+</div>
+
+<%= form_for @post do |form| %>
+<%= render "shared/review_form", form: form %>
+<% end %>

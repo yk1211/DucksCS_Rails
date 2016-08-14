@@ -1,0 +1,31 @@
+//Login-panle CSS
+
+.panel-primary {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  width: 390px;
+  height: 300px;
+
+  .panel-heading{
+    background-color: #880c29;
+
+    .panel-title {
+      font-size: 20px;
+    }
+  }
+
+  .panel-body {
+
+    .submit_login {
+      color: #ffffff;
+      background-color: #880c29;
+    }
+    .forgot {
+      color: #880c29;
+      margin-top: 7px;
+      font-size: 14px;
+    }
+  }
+}

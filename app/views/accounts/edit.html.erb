@@ -1,0 +1,15 @@
+<% @page_title = "Edit My Account" %>
+
+<div class="container">
+<p><%= link_to "Top", :root, style: "color: #880c29;" %> > <%= link_to "My Account", :account, style: "color: #880c29;"%> > Edit My Account </p>
+ <h2 class="h2_editmyaccount"><%= @page_title %></h2>
+ <% if current_member %>
+ <p class="small_notice">
+   *Please keep the password blank if you do not change it.
+ </p>
+ <% end %>
+
+<%= form_for @member, as: "account", url: :account do |form| %>
+<%= render "members/form", form: form %>
+<% end %>
+</div>

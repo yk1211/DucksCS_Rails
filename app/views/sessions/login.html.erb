@@ -1,0 +1,35 @@
+<% @page_title = "Log in" %>
+
+<div class="container">
+  <span><%= link_to "Top", :root , style: "color: #880c29"%> > Log in </span>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Log in to Ducks CS</h3>
+    </div>
+    <div class="panel-body">
+      <%= form_tag :session do %>
+       <div class="form-group">
+         <label for="name">User Name</label>
+         <% if flash[:notice_name] %>
+         <span class="notice"><%= flash[:notice_name] %></span>
+         <% end %>
+         <%= text_field_tag "name", "", class: "form-control", style: "width: 350px" %>
+       </div>
+
+       <div class="form-group">
+         <label for="password">Password</label>
+         <% if flash[:notice_password] %>
+         <span class="notice"><%= flash[:notice_password] %></span>
+         <% elsif flash[:notice_unmatch] %>
+         <span class="notice"><%= flash[:notice_unmatch] %></span>
+         <% end %>
+         <%= password_field_tag "password", "", class: "form-control", style: "width: 350px" %>
+       </div>
+
+         <a class="submit_login"><%= submit_tag "Log in", style: "background-color: #880c29"%></a>
+         <p class="forgot"><%= link_to "Forgot Username or Password?", :index, style: "color: #880c29" %></p>
+
+       <% end %>
+    </div><!-- panel-body -->
+  </div><!-- panel-primary -->
+</div><!-- container -->

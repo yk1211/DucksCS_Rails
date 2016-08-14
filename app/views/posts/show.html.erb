@@ -1,0 +1,56 @@
+<% @page_title = "Review" %>
+
+<div class="container">
+  <p><%= link_to "Top", :root, style: "color: #880c29;" %> > <%= link_to "All reviews", :posts, style: "color:#880c29;" %> > Review</p>
+  <table class="table review_table ">
+    <tr>
+      <th >Term</th>
+      <td><%= @post.term %></td>
+    </tr>
+    <tr>
+      <th>Course</th>
+      <td><%=@post.title %></td>
+    </tr>
+    <tr>
+      <th>Campus</th>
+      <% if @post.campus == 0 %>
+      <td><%= "On campus" %></td>
+      <% else %>
+      <td><%= "Web campus" %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <th>Course level</th>
+      <td><%=@post.level %></td>
+    </tr>
+    <tr>
+      <th>Home work</th>
+      <td><%=@post.hw %></td>
+    </tr>
+    <tr>
+      <th>Project</th>
+      <td><%=@post.project %></td>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <td><%=@post.language %></td>
+    </tr>
+    <tr>
+      <th>Midterm exam</th>
+      <td><%=@post.mid %></td>
+    </tr>
+    <tr>
+      <th>Final exam</th>
+      <td><%=@post.final %></td>
+    </tr>
+    <tr>
+      <th>Review</th>
+      <td><%= @post.body %></td>
+    </tr>
+    <tr>
+      <th>Satisfaction</th>
+      <td><%= @post.rate %> / 5</td>
+    </tr>
+  </table>
+
+</div>

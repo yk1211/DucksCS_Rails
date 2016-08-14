@@ -1,0 +1,9 @@
+<% @page_title = "Sign up for Ducks CS" %>
+
+<div class="container">
+<span><%= link_to "Top", :root , style: "color: #880c29"%> > Sign up </span>
+<h2 class="h2_signup">Sign up for Ducks CS</h2>
+<%= form_for @member do |form| %>
+<%= render "form", form: form %>
+<% end %>
+</div>

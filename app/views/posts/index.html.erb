@@ -1,0 +1,46 @@
+<% @page_title = "All reviews" %>
+
+<% if @posts.present? %>
+<div class="container">
+  <p><%= link_to "Top", :root, style: "color: #880c29;" %> > All reviews </p>
+  <% if flash[:notice_newpost] %>
+  <div class="alert alert-info">
+    <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+    <span><%= flash[:notice_newpost] %></span>
+  </div>
+  <% end %>
+
+  <div class="header_post">
+    <p>
+       <button class="review_button"><%= link_to "Review in minutes", :new_post %></button>
+    </p>
+  </div>
+  <h3>All reviews</h3>
+  <table class="table table-condensed">
+    <tr>
+      <th>Term</th>
+      <th>Campus</th>
+      <th>Course Name</th>
+      <th>Rating</th>
+    </tr>
+    <% @posts.each do |post| %>
+    <tr data-link="<%= post %>">
+      <td><%= post.term %></td>
+
+      <% if post.campus == 0 %>
+      <td><%= "On campus" %></td>
+      <% else %>
+      <td><%= "Web campus" %></td>
+      <% end %>
+      <td><%= post.title %><%= link_to "...Read more", post, style: "color: #880c29" %></td>
+      <td><%= post.rate %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+<div class="paginate">
+  <%= paginate @posts %>
+</div>
+<% else %>
+<p>No posts for now</p>
+<% end %>

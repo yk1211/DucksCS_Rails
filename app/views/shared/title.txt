@@ -1,0 +1,99 @@
+CS 501	Introduction to Java Programming
+CS 503	Discrete Mathematics for Cryptography
+CS 505	Probability and Stochastic Processes I
+CS 506	Introduction to IT Security
+CS 510	Principles of Programming Languages
+CS 511	Concurrent Programming
+CS 513	Knowledge Discovery and Data Mining
+CS 514	Computer Architecture
+CS 516	Compiler Design
+CS 519	Introduction to E-commerce
+CS 520	Introduction to Operating Systems
+CS 521	TCP/IP Networking
+CS 522	Mobile Systems and Applications
+CS 524	Introduction to Cloud Computing
+CS 526	Enterprise and Cloud Computing
+CS 532	3D Computer Vision
+CS 533	Cost Estimation and Metrics
+CS 535	Financial Computing
+CS 536	Integrated Services - Multimedia
+CS 537	Interactive Computer Graphics
+CS 538	Visual Analytics
+CS 539	Real-Time Rendering, Gaming, and Simulations Programming
+CS 541	Artificial Intelligence
+CS 543	Principles of Computer Mediated Entertainment
+CS 544	Health Informatics
+CS 545	Human-Computer Interaction
+CS 546	Web Programming
+CS 547	Web Programming II
+CS 548	Enterprise Software Architecture and Design
+CS 549	Distributed Systems and Cloud Computing
+CS 550	Computer Organization and Programming
+CS 553	Introduction to Text Mining and Statistical Natural Language Processing
+CS 554	Web Programming II
+CS 555	Agile Methods for Software Development
+CS 558	Computer Vision
+CS 559	Machine Learning: Fundamentals and Applications
+CS 561	Database Management Systems I
+CS 562	Database Management Systems II
+CS 564	Software Requirements Aquisition and Analysis
+CS 568	Software Development Project I
+CS 569	Software Development Project II
+CS 570	Introduction to Programming, Data Structures, and Algorithms
+CS 571	Java
+CS 573	Fundamentals of CyberSecurity
+CS 574	Object-Oriented Analysis and Design
+CS 576	Systems Security
+CS 577	Reverse Engineering and Application Analysis
+CS 578	Privacy in a Networked World
+CS 579	Foundations of Cryptography
+CS 581	Online Social Networks
+CS 582	Causal Inference
+CS 585	Introduction to Game Development
+CS 586	Machine Learning for Game Design
+CS 587	Game Engine Design
+CS 590	Algorithms
+CS 593	Data Mining II: Advanced Algorithms for Mining Big Data
+CS 594	Enterprise Security and Information Assurance
+CS 596	Introduction to Windows Programming
+CS 597	User Exp Design & Programming
+CS 598	Visual Information Retrieval
+CS 600	Advanced Algorithm Design and Implementation
+CS 601	Algorithmic Complexity
+CS 609	Data Management and Exploration on the Web
+CS 615	Systems Administration
+CS 625	Foundations of Distributed Computing
+CS 629	Advanced Internet Protocols
+CS 630	Models of Computation and Formal Languages
+CS 631	Advanced Programming in the UNIX Environment
+CS 634	Decidability and Computability
+CS 638	Advanced Computer Graphics
+CS 643	Formal Verification of Software
+CS 651	Introduction to Network and Graph Theory
+CS 655	Queuing Systems With Computer Applications I
+CS 656	Queuing Systems with Computer Applications II
+CS 660	Graph Algorithms
+CS 665	Forensic Analysis
+CS 669	Network Management
+CS 675	Threats, Exploits, and Countermeasures
+CS 676	Advanced Topics in Systems Security
+CS 677	Multicore Platforms for Cognitive Gaming and Simulation
+CS 687	Engineering of Large Software Systems
+CS 688	Software Testing, Quality Assurance & Maintenance
+CS 689	Software Reliability Engineering
+CS 691	Introduction to Systems Biology
+CS 693	Cryptographic Protocols
+CS 694	Advanced Computational Modeling in Biology and Biomaterials Science
+CS 695	Host Forensics
+CS 696	Database Security
+CS 700	Formal Semantics of Programming Language
+CS 701	CS Co-Op Education Project
+CS 703	Curricular Practical Training
+CS 777	Introduction to Expert Systems
+CS 800	Special Problems in Computer Science (M.S.)
+CS 801	Special Problems in Computer Science (Ph.D.)
+CS 802	Software Engineering Examination
+CS 810	Special Topics in Computer Science
+CS 900	Thesis in Computer Science (M.S.)
+CS 950	Design Project
+CS 960	Research in Computer Science(Ph.D.)
