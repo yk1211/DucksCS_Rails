@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+# Use dotenv to save environmental variables
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -47,9 +48,6 @@ gem 'will_paginate-bootstrap'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -77,4 +75,8 @@ group :test do
   gem 'database_cleaner', '~> 1.3.0'
   gem 'launchy', '~> 2.4.2'
   gem 'selenium-webdriver', '~> 2.43.0'
+end
+
+group :production, :staging do
+  gem 'unicorn'
 end
