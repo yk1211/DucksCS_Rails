@@ -12,6 +12,7 @@
 
   <div class="header_post">
     <p>
+      You can start review here!<br />
        <button class="review_button"><%= link_to "Review in minutes", :new_post %></button>
     </p>
   </div>
@@ -42,5 +43,13 @@
   <%= paginate @posts %>
 </div>
 <% else %>
-<p>No posts for now</p>
+<div class="container">
+  <p>No posts for now</p>
+  <div class="header_post">
+    <p>
+       <button class="review_button"><%= link_to "Review in minutes", :new_post %></button>
+    </p>
+  </div>
+</div>
+
 <% end %>

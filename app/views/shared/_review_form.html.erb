@@ -48,8 +48,7 @@
     <tr>
       <th><%= form.label :Language %></th>
       <td>
-        <% options = ["C", "C++", "C#", "Java", "Python", "Ruby", "PHP", "JavaScript", "Scala", "Haskell",
-          "Ocaml", "Lisp", "Scheme", "Assembly language", "GO", "Rust", "Shell", "VBA", "SQL", "Anything OK"] %>
+        <% options = ["C", "C++", "C#", "Java", "Python", "Ruby", "PHP", "Perl", "JavaScript", "Scala", "Haskell", "Ocaml", "Lisp", "Scheme", "Assembly language", "GO", "Rust", "Shell", "VBA", "SQL", "R", "Anything OK"] %>
         <%= form.select :language, options %>
       </td>
     </tr>
@@ -71,7 +70,7 @@
     <tr>
       <th><%= form.label :Review  %></th>
       <td>
-        <%= form.text_area :body, cols: 40, rows: 5, placeholder: "Any prerequisites, required knowledge, your recommendations"%>
+        <%= form.text_area :body, cols: 70, rows: 7, placeholder: "Any prerequisites, required knowledge, your advice"%>
       </td>
     </tr>
     <tr>

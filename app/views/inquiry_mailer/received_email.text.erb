@@ -1,8 +1,14 @@
-Received message
+Dear <%= @inquiry.name%>
 
------------
+Thank you for contacting us!
+We have received following message from you:
+--------------------------------------------------------
 Name: <%= @inquiry.name %>
-Email: <%= @inquiry.name %>
+
+Email: <%= @inquiry.email %>
+
 Message:
 <%= @inquiry.message %>
------------
+--------------------------------------------------------
+Note: This email was sent to you by DucksCS.
+This account is not monitored. Please do no reply this email.

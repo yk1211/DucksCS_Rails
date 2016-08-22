@@ -1,3 +1,12 @@
 <% @page_title = "Thank you!" %>
 
-<h3>Thank you! </br>Your message has been sent.</h3>
+<div class="container">
+  <p><%= link_to "TOP", :root, style: "color: #880c29" %> > Contact us </p>
+  <% if flash[:notice_thanks] %>
+  <div class="alert alert-info">
+    <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+    <span><%= flash[:notice_thanks] %></span>
+  </div>
+  <% end %>
+
+</div>

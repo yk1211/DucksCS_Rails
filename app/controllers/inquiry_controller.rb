@@ -20,7 +20,7 @@ class InquiryController < ApplicationController
     #Sending email
     @inquiry = Inquiry.new(params[:inquiry])
     InquiryMailer.received_email(@inquiry).deliver
-
+    flash[:notice_thanks] = "Thank you! Your message has been sent."
     #Display inquiry is completed
     render :action => 'thanks'
   end
