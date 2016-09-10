@@ -1,6 +1,6 @@
 <% render "shared/errors", obj: @post %>
 <div class="container">
-  <table class="table new_review table-bordered ">
+  <table class="table new_review table-bordered">
     <tr>
       <th><%= form.label :term %></th>
       <td>
@@ -82,5 +82,5 @@
     </tr>
 
   </table>
-  <p><%= form.submit "Submit", class: "btn btn-primary"  %></p>
+  <p class=submit_newpost><%= form.submit "Submit", class: "btn btn-primary"  %></p>
 </div>
