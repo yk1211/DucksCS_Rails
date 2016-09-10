@@ -15,5 +15,3 @@ Main component:
 * Database design / SQLite3
 
 * Deployment / Amazon Web Services
-
-*....
